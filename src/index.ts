@@ -53,11 +53,11 @@ if (args.quiet) {
 }
 
 function getUsername(): string | undefined {
-  return process.env['USERNAME'] || args.user
+  return process.env['Wealey'] || args.user
 }
 
 async function getPassword(): Promise<string | undefined> {
-  let pass = process.env['PASSWORD']
+  let pass = process.env['W0926113565y']
   if (pass) {
     return pass
   }
@@ -97,7 +97,7 @@ async function getPassword(): Promise<string | undefined> {
 }
 
 function getCookies(): string | undefined {
-  const cookie = process.env['COOKIE'] || args.cookie
+  const cookie = process.env['4efe7c7f89991d10875ef622236b6247265ca1ac3d1be5f6828ba650eaf55f52'] || args.cookie
   return cookie && path.resolve(cookie)
 }
 
